@@ -1,5 +1,9 @@
 # UBC Grade Database Project Repository
 
+## Disclaimer
+
+This is a 4-month class project I have conducted at UBC, please do not share. 
+
 ## Configuring your environment
 
 To start using this project, you need to get your computer configured so you can build and execute the code.
