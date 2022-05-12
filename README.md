@@ -2,7 +2,7 @@
 
 ## Disclaimer
 
-This is a 4-month class project I have conducted at UBC, please do not share. 
+This is a 4-month class project I have conducted at UBC which received full marks, please do not share. 
 
 ## Configuring your environment
 
