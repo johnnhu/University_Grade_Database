@@ -25,7 +25,3 @@ In the project folder:
 1. `yarn test` to run the test suite.
 
 1. `yarn pretty` to prettify your project code.
-
-## Running and testing from an IDE
-
-# UBC_Grade_Database
