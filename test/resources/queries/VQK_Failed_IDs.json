@@ -1,0 +1,19 @@
+{
+  "title": "Valid Query Keys - failed, all keys have different IDs",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": 97
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "twoSections_dept",
+        "courses_avg"
+      ],
+      "ORDER": "nineSections_avg"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

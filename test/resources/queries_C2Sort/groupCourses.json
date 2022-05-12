@@ -1,0 +1,40 @@
+{
+	"title": "ROOM",
+	"input": {
+		"WHERE": {
+					"IS": {
+						"twoSections_dept": "*aanb*"
+					}
+				},
+		"OPTIONS": {
+			"COLUMNS": [
+				"twoSections_dept",
+				"maxAvg"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": [
+					"maxAvg"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"twoSections_dept"
+			],
+			"APPLY": [
+				{
+					"maxAvg": {
+						"MAX": "twoSections_avg"
+					}
+				}
+			]
+		}
+	},
+	"expected": [
+		{
+			"twoSections_dept": "aanb",
+			"maxAvg": 94.44
+		}
+	]
+}

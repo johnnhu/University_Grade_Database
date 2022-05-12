@@ -1,0 +1,7 @@
+{
+  "title": "Syntactic - failed, missing OPTIONS and WHERE",
+  "input": {
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

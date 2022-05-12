@@ -1,0 +1,27 @@
+{
+	"title": "NOT query",
+	"input": {
+		"WHERE": {
+			"NOT": {
+				"LT": {
+					"nineSections_avg": 90
+				}
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"nineSections_avg"
+			],
+			"ORDER": "nineSections_avg"
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"nineSections_avg": 94.44
+		},
+		{
+			"nineSections_avg": 94.44
+		}
+	]
+}

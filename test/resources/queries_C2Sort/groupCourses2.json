@@ -1,0 +1,46 @@
+{
+	"title": "ROOM",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"courses_dept": "comm"
+					}
+				},
+				{
+					"GT": {
+						"courses_avg": 90
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"courses_id",
+				"avgScore"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": [
+					"avgScore"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept",
+				"courses_id"
+			],
+			"APPLY": [
+				{
+					"avgScore": {
+						"AVG": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"expected": [{"courses_dept":"comm","courses_id":"581","avgScore":94.06}]
+}

@@ -1,0 +1,6 @@
+{
+  "title": "EBNF - failed 2",
+  "input": 3,
+  "errorExpected": true,
+  "expected": "InsightError"
+}

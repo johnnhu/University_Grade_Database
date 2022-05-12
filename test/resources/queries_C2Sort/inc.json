@@ -1,0 +1,51 @@
+{
+	"title": "ROOM",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"rooms_furniture": "*Tables*"
+					}
+				},
+				{
+					"GT": {
+						"rooms_seats": 100
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"maxSeats",
+				"countName"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"maxSeats",
+					"countName"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_shortname"
+			],
+			"APPLY": [
+				{
+					"maxSeats": {
+						"MAX": "rooms_seats"
+					}
+				},
+				{
+					"countName": {
+                		"COUNT": "rooms_shortname"
+                	}
+				}
+			]
+		}
+	},
+	"expected": [{"rooms_shortname":"BUCH","maxSeats":108,"countName":1},{"rooms_shortname":"WOOD","maxSeats":120,"countName":1},{"rooms_shortname":"MCLD","maxSeats":136,"countName":1},{"rooms_shortname":"IBLC","maxSeats":154,"countName":1},{"rooms_shortname":"FRDM","maxSeats":160,"countName":1},{"rooms_shortname":"DMP","maxSeats":160,"countName":1},{"rooms_shortname":"SWNG","maxSeats":190,"countName":1},{"rooms_shortname":"CHBE","maxSeats":200,"countName":1},{"rooms_shortname":"LSK","maxSeats":205,"countName":1},{"rooms_shortname":"PHRM","maxSeats":236,"countName":1},{"rooms_shortname":"ANGU","maxSeats":260,"countName":1},{"rooms_shortname":"SRC","maxSeats":299,"countName":1},{"rooms_shortname":"LSC","maxSeats":350,"countName":1},{"rooms_shortname":"HEBB","maxSeats":375,"countName":1},{"rooms_shortname":"OSBO","maxSeats":442,"countName":1}]
+}

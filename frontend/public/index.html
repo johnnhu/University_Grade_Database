@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<title>310 Frontend</title>
+	<link href="/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="header">
+	<h1>Welcome to the Team 556 Database</h1>
+</div>
+<div class="row">
+	<div class="column">
+		<h1>List All Datasets</h1>
+		<button id="listButton" class="button">List All Datasets</button>
+		<div id="results" class="results-box"></div>
+	</div>
+	<!--print results -->
+
+
+	<div class="column">
+		<h1>Add a Dataset</h1>
+		<form id="myForm">
+			<input type="file" id="myFile" name="myFile" accept=".zip">
+			<br>
+			<br>
+			<label for="addThis">Dataset ID:</label>
+			<input type="text" id="addThis" name="addThis">
+			<br>
+			<br>
+			<label for="datasetKind">Dataset Type:</label>
+			<input type="text" id="datasetKind" name="datasetKind">
+			<br>
+			<br>
+		</form>
+		<button id="addDataset" class="button">Add a Dataset</button>
+	</div>
+
+	<!--<script type="text/javascript" src="/frontend.js"></script>-->
+	<div class="column">
+		<h1>Remove a Dataset</h1>
+		<label for="removeDataset">DatasetID:</label>
+		<input type="text" id="removeThis">
+		<br>
+		<br>
+		<button id="removeDataset" class="button">Remove Dataset</button>
+		<img src="photo.jpg">
+	</div>
+</div>
+
+<script type="text/javascript" src="/frontend.js"></script>
+</body>
+</html>

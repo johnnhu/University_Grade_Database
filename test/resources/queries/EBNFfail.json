@@ -1,0 +1,6 @@
+{
+  "title": "EBNF - failed just a string",
+  "input": "WHERE",
+  "errorExpected": true,
+  "expected": "InsightError"
+}

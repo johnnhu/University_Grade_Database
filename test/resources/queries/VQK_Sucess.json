@@ -1,0 +1,547 @@
+{
+  "title": "Valid Query Keys - sucess, found all keys",
+  "input": {
+    "WHERE": {
+      "OR": [
+        {
+          "AND": [
+            {
+              "GT": {
+                "courses_avg": 90
+              }
+            },
+            {
+              "IS": {
+                "courses_dept": "adhe"
+              }
+            }
+          ]
+        },
+        {
+          "EQ": {
+            "courses_avg": 95
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_instructor",
+        "courses_id",
+        "courses_title",
+        "courses_audit",
+        "courses_year",
+        "courses_pass",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": false,
+  "expected": [
+    {
+      "courses_instructor": "",
+      "courses_id": "329",
+      "courses_title": "dev wkshp/sem",
+      "courses_audit": 0,
+      "courses_year": 1900,
+      "courses_pass": 62,
+      "courses_avg": 90.02
+    },
+    {
+      "courses_instructor": "vanwynsberghe, robert",
+      "courses_id": "412",
+      "courses_title": "adul educ",
+      "courses_audit": 0,
+      "courses_year": 2015,
+      "courses_pass": 31,
+      "courses_avg": 90.16
+    },
+    {
+      "courses_instructor": "bishundayal, deonarine",
+      "courses_id": "330",
+      "courses_title": "com adult educ",
+      "courses_audit": 0,
+      "courses_year": 2011,
+      "courses_pass": 29,
+      "courses_avg": 90.17
+    },
+    {
+      "courses_instructor": "falk, clifford",
+      "courses_id": "412",
+      "courses_title": "adul educ",
+      "courses_audit": 0,
+      "courses_year": 2007,
+      "courses_pass": 11,
+      "courses_avg": 90.18
+    },
+    {
+      "courses_instructor": "bishundayal, deonarine",
+      "courses_id": "330",
+      "courses_title": "com adult educ",
+      "courses_audit": 0,
+      "courses_year": 2012,
+      "courses_pass": 18,
+      "courses_avg": 90.5
+    },
+    {
+      "courses_instructor": "bishundayal, deonarine",
+      "courses_id": "330",
+      "courses_title": "com adult educ",
+      "courses_audit": 0,
+      "courses_year": 2014,
+      "courses_pass": 25,
+      "courses_avg": 90.72
+    },
+    {
+      "courses_instructor": "bishundayal, deonarine",
+      "courses_id": "329",
+      "courses_title": "dev wkshp/sem",
+      "courses_audit": 0,
+      "courses_year": 2015,
+      "courses_pass": 33,
+      "courses_avg": 90.82
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "330",
+      "courses_title": "com adult educ",
+      "courses_audit": 0,
+      "courses_year": 1900,
+      "courses_pass": 34,
+      "courses_avg": 90.85
+    },
+    {
+      "courses_instructor": "bishundayal, deonarine",
+      "courses_id": "330",
+      "courses_title": "com adult educ",
+      "courses_audit": 0,
+      "courses_year": 2016,
+      "courses_pass": 28,
+      "courses_avg": 91.29
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "330",
+      "courses_title": "com adult educ",
+      "courses_audit": 0,
+      "courses_year": 1900,
+      "courses_pass": 18,
+      "courses_avg": 91.33
+    },
+    {
+      "courses_instructor": "bishundayal, deonarine",
+      "courses_id": "330",
+      "courses_title": "com adult educ",
+      "courses_audit": 0,
+      "courses_year": 2012,
+      "courses_pass": 18,
+      "courses_avg": 91.33
+    },
+    {
+      "courses_instructor": "bishundayal, deonarine",
+      "courses_id": "330",
+      "courses_title": "com adult educ",
+      "courses_audit": 0,
+      "courses_year": 2009,
+      "courses_pass": 23,
+      "courses_avg": 91.48
+    },
+    {
+      "courses_instructor": "bishundayal, deonarine",
+      "courses_id": "329",
+      "courses_title": "dev wkshp/sem",
+      "courses_audit": 0,
+      "courses_year": 2015,
+      "courses_pass": 26,
+      "courses_avg": 92.54
+    },
+    {
+      "courses_instructor": "bishundayal, deonarine",
+      "courses_id": "329",
+      "courses_title": "dev wkshp/sem",
+      "courses_audit": 0,
+      "courses_year": 2016,
+      "courses_pass": 33,
+      "courses_avg": 93.33
+    },
+    {
+      "courses_instructor": "clark, natalie",
+      "courses_id": "570",
+      "courses_title": "directed study",
+      "courses_audit": 0,
+      "courses_year": 2015,
+      "courses_pass": 4,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "501",
+      "courses_title": "eval src evidenc",
+      "courses_audit": 4,
+      "courses_year": 2009,
+      "courses_pass": 6,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "501",
+      "courses_title": "health psych",
+      "courses_audit": 0,
+      "courses_year": 1900,
+      "courses_pass": 8,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "de longis, anita",
+      "courses_id": "501",
+      "courses_title": "health psych",
+      "courses_audit": 0,
+      "courses_year": 2010,
+      "courses_pass": 8,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "549",
+      "courses_title": "msc thesis",
+      "courses_audit": 0,
+      "courses_year": 1900,
+      "courses_pass": 1,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "424",
+      "courses_title": "mntl hlth concrn",
+      "courses_audit": 0,
+      "courses_year": 1900,
+      "courses_pass": 9,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "phillips, craig",
+      "courses_id": "424",
+      "courses_title": "mntl hlth concrn",
+      "courses_audit": 0,
+      "courses_year": 2010,
+      "courses_pass": 9,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "553",
+      "courses_title": "ubc singers",
+      "courses_audit": 0,
+      "courses_year": 1900,
+      "courses_pass": 4,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "langager, graeme",
+      "courses_id": "553",
+      "courses_title": "ubc singers",
+      "courses_audit": 0,
+      "courses_year": 2011,
+      "courses_pass": 4,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "553",
+      "courses_title": "ubc singers",
+      "courses_audit": 0,
+      "courses_year": 1900,
+      "courses_pass": 7,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "langager, graeme",
+      "courses_id": "553",
+      "courses_title": "ubc singers",
+      "courses_audit": 0,
+      "courses_year": 2013,
+      "courses_pass": 7,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "553",
+      "courses_title": "ubc singers",
+      "courses_audit": 0,
+      "courses_year": 1900,
+      "courses_pass": 4,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "langager, graeme",
+      "courses_id": "553",
+      "courses_title": "ubc singers",
+      "courses_audit": 0,
+      "courses_year": 2010,
+      "courses_pass": 4,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "599",
+      "courses_title": "masters thesis",
+      "courses_audit": 0,
+      "courses_year": 2011,
+      "courses_pass": 1,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "564",
+      "courses_title": "hydrmtllgcl rctr",
+      "courses_audit": 0,
+      "courses_year": 1900,
+      "courses_pass": 6,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "dixon, david",
+      "courses_id": "564",
+      "courses_title": "hydrmtllgcl rctr",
+      "courses_audit": 0,
+      "courses_year": 2010,
+      "courses_pass": 6,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "532",
+      "courses_title": "algb geometry i",
+      "courses_audit": 0,
+      "courses_year": 1900,
+      "courses_pass": 6,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "532",
+      "courses_title": "algb geometry i",
+      "courses_audit": 0,
+      "courses_year": 2008,
+      "courses_pass": 6,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "500",
+      "courses_title": "spec tpcs kin",
+      "courses_audit": 0,
+      "courses_year": 2014,
+      "courses_pass": 4,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "500",
+      "courses_title": "spec tpcs kin",
+      "courses_audit": 0,
+      "courses_year": 2013,
+      "courses_pass": 7,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "499",
+      "courses_title": "kin project",
+      "courses_audit": 0,
+      "courses_year": 2015,
+      "courses_pass": 5,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "682",
+      "courses_title": "mult des anal rs",
+      "courses_audit": 9,
+      "courses_year": 1900,
+      "courses_pass": 9,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "zumbo, bruno",
+      "courses_id": "682",
+      "courses_title": "mult des anal rs",
+      "courses_audit": 9,
+      "courses_year": 2007,
+      "courses_pass": 9,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "vadeboncoeur, jennifer",
+      "courses_id": "606",
+      "courses_title": "coll&uni teachng",
+      "courses_audit": 0,
+      "courses_year": 2009,
+      "courses_pass": 7,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "473",
+      "courses_title": "ict educ ethics",
+      "courses_audit": 0,
+      "courses_year": 1900,
+      "courses_pass": 19,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "petrina, stephen",
+      "courses_id": "473",
+      "courses_title": "ict educ ethics",
+      "courses_audit": 0,
+      "courses_year": 2013,
+      "courses_pass": 19,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "516",
+      "courses_title": "spc tpcs macroec",
+      "courses_audit": 2,
+      "courses_year": 1900,
+      "courses_pass": 3,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "gallipoli, giovanni",
+      "courses_id": "516",
+      "courses_title": "spc tpcs macroec",
+      "courses_audit": 2,
+      "courses_year": 2016,
+      "courses_pass": 3,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "galloway, steve",
+      "courses_id": "599",
+      "courses_title": "thesis",
+      "courses_audit": 0,
+      "courses_year": 2014,
+      "courses_pass": 2,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "599",
+      "courses_title": "thesis",
+      "courses_audit": 0,
+      "courses_year": 1900,
+      "courses_pass": 3,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "acheson, alison",
+      "courses_id": "599",
+      "courses_title": "thesis",
+      "courses_audit": 0,
+      "courses_year": 2015,
+      "courses_pass": 1,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "599",
+      "courses_title": "thesis",
+      "courses_audit": 0,
+      "courses_year": 2012,
+      "courses_pass": 3,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "medved, maureen",
+      "courses_id": "599",
+      "courses_title": "thesis",
+      "courses_audit": 0,
+      "courses_year": 2013,
+      "courses_pass": 1,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "svendsen, linda jane",
+      "courses_id": "599",
+      "courses_title": "thesis",
+      "courses_audit": 0,
+      "courses_year": 2013,
+      "courses_pass": 1,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "graefe, sara",
+      "courses_id": "599",
+      "courses_title": "thesis",
+      "courses_audit": 0,
+      "courses_year": 2014,
+      "courses_pass": 2,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "589",
+      "courses_title": "m.sc major essay",
+      "courses_audit": 0,
+      "courses_year": 1900,
+      "courses_pass": 1,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "589",
+      "courses_title": "m.sc major essay",
+      "courses_audit": 0,
+      "courses_year": 2014,
+      "courses_pass": 1,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "535",
+      "courses_title": "adlt psychpathlg",
+      "courses_audit": 1,
+      "courses_year": 1900,
+      "courses_pass": 4,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "schultz, izabela",
+      "courses_id": "535",
+      "courses_title": "adlt psychpathlg",
+      "courses_audit": 1,
+      "courses_year": 2016,
+      "courses_pass": 4,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "",
+      "courses_id": "597",
+      "courses_title": "master eng proj",
+      "courses_audit": 0,
+      "courses_year": 1900,
+      "courses_pass": 2,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "dumont, guy a",
+      "courses_id": "597",
+      "courses_title": "master eng proj",
+      "courses_audit": 0,
+      "courses_year": 2014,
+      "courses_pass": 2,
+      "courses_avg": 95
+    },
+    {
+      "courses_instructor": "bishundayal, deonarine",
+      "courses_id": "329",
+      "courses_title": "dev wkshp/sem",
+      "courses_audit": 0,
+      "courses_year": 2015,
+      "courses_pass": 27,
+      "courses_avg": 96.11
+    }
+  ]
+}

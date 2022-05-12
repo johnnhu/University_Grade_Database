@@ -1,0 +1,98 @@
+/*.center {*/
+/*	margin: 0;*/
+/*	position: absolute;*/
+/*	top: 20%;*/
+/*	left: 50%;*/
+/*	-ms-transform: translate(-50%, -50%);*/
+/*	transform: translate(-50%, -50%);*/
+/*}*/
+
+/*.center-text {*/
+/*	margin: 0;*/
+/*	position: absolute;*/
+/*	top: 10%;*/
+/*	left: 50%;*/
+/*	-ms-transform: translate(-50%, -50%);*/
+/*	transform: translate(-50%, -50%);*/
+/*}*/
+
+.results-box {
+	margin: 1px;
+	position: absolute;
+	top: 80%;
+	left: 15%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border: 1px dotted blue;
+	line-height: 1.6;
+}
+
+/*.div-res {*/
+
+/*}*/
+/*.flex-container {*/
+/*	display: flex;*/
+/*	flex-direction: row;*/
+/*}*/
+
+/*.remove{*/
+/*	margin: 0;*/
+/*	position: absolute;*/
+/*	top: 150%;*/
+/*	left: 55%;*/
+/*	-ms-transform: translate(-50%, -50%);*/
+/*	transform: translate(-50%, -50%);*/
+/*}*/
+
+.button {
+	background-color: #3f51b5;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+.header {
+	background-color: #f1f1f1;
+	padding: 30px;
+	text-align: center;
+	font-size: 35px;
+}
+
+/* Container for flexboxes */
+.row {
+	display: -webkit-flex;
+	display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 10px;
+	height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the footer */
+.footer {
+	background-color: #f1f1f1;
+	padding: 10px;
+	text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+	.row {
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+}
+

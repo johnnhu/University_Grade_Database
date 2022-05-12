@@ -1,0 +1,19 @@
+{
+  "title": "EBNF - failed, id is a number",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "courses_id": 1234124
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_id",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}
