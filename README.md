@@ -1,9 +1,4 @@
-# CPSC 310 Project Repository
-
-This repository contains starter code for the class project.
-Please keep your repository private.
-
-For information about the project, autotest, and the checkpoints, see the course webpage.
+# UBC Grade Database Project Repository
 
 ## Configuring your environment
 
@@ -33,5 +28,4 @@ In the project folder:
 
 ## Running and testing from an IDE
 
-IntelliJ Ultimate should be automatically configured the first time you open the project (IntelliJ Ultimate is a free download through their students program)
 # UBC_Grade_Database
