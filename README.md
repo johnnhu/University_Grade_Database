@@ -4,7 +4,8 @@
 
 This is a 4-month class project I have conducted at UBC which received full marks, please do not share. 
 
-## Configuring your environment
+## Configuring your environment<img width="1440" alt="Screen Shot 2022-05-12 at 8 57 59 PM" src="https://user-images.githubusercontent.com/88955439/168208424-eb4a5e86-e3e5-4abf-9b6b-fac19cc096f0.png">
+
 
 To start using this project, you need to get your computer configured so you can build and execute the code.
 To do this, follow these steps; the specifics of each step (especially the first two) will vary based on which operating system your computer has:
