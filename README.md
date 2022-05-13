@@ -1,10 +1,11 @@
 # UBC Grade Database Project Repository
+<img width="1440" alt="Screen Shot 2022-05-12 at 8 58 33 PM" src="https://user-images.githubusercontent.com/88955439/168208502-82c9d7ca-4a15-49eb-98ae-a1656a2a3b2c.png">
 
 ## Disclaimer
 
 This is a 4-month class project I have conducted at UBC which received full marks, please do not share. 
 
-## Configuring your environment<img width="1440" alt="Screen Shot 2022-05-12 at 8 57 59 PM" src="https://user-images.githubusercontent.com/88955439/168208424-eb4a5e86-e3e5-4abf-9b6b-fac19cc096f0.png">
+## Configuring your environment
 
 
 To start using this project, you need to get your computer configured so you can build and execute the code.
